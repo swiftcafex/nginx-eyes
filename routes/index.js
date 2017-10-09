@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+// Const config = require('config');
+
+const router = new express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', (req, res) => {
+	res.render('index', {title: 'Nginx Eyes'});
 });
 
 module.exports = router;
