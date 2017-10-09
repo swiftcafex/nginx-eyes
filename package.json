@@ -23,9 +23,13 @@
     "coveralls": "^3.0.0",
     "import-fresh": "^2.0.0",
     "nyc": "^11.2.1",
+    "pre-commit": "^1.2.2",
     "xo": "*"
   },
+  "pre-commit": [
+    "test"
+  ],
   "xo": {
-    "esnext" : false
+    "esnext": false
   }
 }
