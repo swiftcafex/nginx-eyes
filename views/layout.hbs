@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"  crossorigin="anonymous">
+
   </head>
-  <body>
-    {{{body}}}
+  <body style="padding: 0px;">
+  	<div class="container-fluid">
+  		<div class="row" style="background: #0078cc;">
+  			<div class="col-12" style="height:60px; line-height:60px;">  				
+  				<img src="images/eye.png" style="margin-left:10px;width:40px;height:40px;" /> 
+  				<span style="color: white;margin-left:10px;font-size: 16px;">Nginx Eyes</span>  				
+  			</div>  			
+  		</div>
+  		<div class="row" >
+  			<div class="col-2" style="height:500px;">
+  				
+  				<br />
+  				<div class="card">
+					<div class="list-group list-group-flush">  							  		
+						<a class="list-group-item list-group-item-action" href="#">Install</a>
+					</div>
+  				</div>
+  				
+  			</div>
+  			<div class="col-10" style="padding-top:20px;" >{{{body}}}</div>
+  		</div>
+  	</div>    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.slim.min.js"></script> <script type="text/javascript" src="bower_components/popper.js/dist/popper.min.js"></script>   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

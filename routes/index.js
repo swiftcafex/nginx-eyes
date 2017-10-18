@@ -1,11 +1,20 @@
 const express = require('express');
-// Const config = require('config');
+const config = require('config');
 
 const router = new express.Router();
 
 /* GET home page. */
 router.get('/', (req, res) => {
-	res.render('index', {title: 'Nginx Eyes'});
+	var dbPath = config.get('dbpath');
+	console.log(dbPath);
+	console.log('env: ' + config.util.getEnv('NODE_ENV'));
+	if (config.get('dbpath') === null) {
+		// Not inited, first start.
+		res.render('init', {title: 'Nginx Eyes'});
+	} else {
+		// Has inited.
+		res.render('index', {title: 'Nginx Eyes'});
+	}
 });
 
 module.exports = router;

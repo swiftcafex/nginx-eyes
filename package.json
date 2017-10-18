@@ -22,6 +22,7 @@
     "ava": "^0.22.0",
     "coveralls": "^3.0.0",
     "import-fresh": "^2.0.0",
+    "mock-fs": "^4.4.1",
     "nyc": "^11.2.1",
     "pre-commit": "^1.2.2",
     "xo": "*"
